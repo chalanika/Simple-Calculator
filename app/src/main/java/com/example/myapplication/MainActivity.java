@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     EditText txt2;
     TextView result;
     String num1,num2;
-
+    Double number1,number2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 num1 = txt1.getText().toString();
                 num2 = txt2.getText().toString();
+                number1 = Double.parseDouble(num1);
+                number2 = Double.parseDouble(num2);
             }
         });
     }
