@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     number1 = Double.parseDouble(num1);
                     number2 = Double.parseDouble(num2);
+                    result.setText((number1+number2)+"");
                 }catch (Exception e){
                     result.setText("Error");
                 }
