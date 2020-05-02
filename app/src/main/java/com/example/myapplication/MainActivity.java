@@ -31,8 +31,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 num1 = txt1.getText().toString();
                 num2 = txt2.getText().toString();
-                number1 = Double.parseDouble(num1);
-                number2 = Double.parseDouble(num2);
+                try {
+                    number1 = Double.parseDouble(num1);
+                    number2 = Double.parseDouble(num2);
+                }catch (Exception e){
+                    result.setText("Error");
+                }
             }
         });
     }
